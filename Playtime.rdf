@@ -1,0 +1,335 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime/"
+     xml:base="http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime#Comsume_comment_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime#Comsume_comment_on">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Platform"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime#Feedback -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime#Feedback">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Publisher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime#Play -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime#Play">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime#Release_update -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime#Release_update">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Publisher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime#Sell -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime#Sell">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Platform"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime#Upload_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/Playtime#Upload_to">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Publisher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Platform"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Player"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Age"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#nonNegativeInteger"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Company -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Company">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Publisher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>A publisher may not work for a company.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#GameID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#GameID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#GameID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>A player could play no game.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Player"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Gender"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Genre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Genre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Genre"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Multi_Player_Average_Time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Multi_Player_Average_Time">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game_name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Platform -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Platform">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#PlatformID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#PlatformID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Platform"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#PlatformID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#PlayerID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#PlayerID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Player"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#PlayerID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Price"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Publisher -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Publisher">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Publisher"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#PublisherID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#PublisherID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Publisher"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#PublisherID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Release_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Release_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Release_date"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Single_Player_Average_Time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Single_Player_Average_Time">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game_name"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Player"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Game"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Platform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Platform"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Player -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Player"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Publisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ysh/ontologies/2024/3/untitled-ontology-5#Publisher"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
