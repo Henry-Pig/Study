@@ -1,3 +1,6 @@
+create database playtime;
+use playtime;
+
 create table platform
 (
     PlatformID varchar(20) not null comment '平台名',
